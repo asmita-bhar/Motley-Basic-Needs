@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#E5CCFF"
+    tools:context="com.example.asmita.converter.EqnSolverActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="        Enter the value of a, b, c : "
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="26dp"
+        android:text="a : "
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="25dp"
+        android:text="b :"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignStart="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="c :"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBottom="@+id/input3"
+        android:layout_alignStart="@+id/tv3" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input3"
+        android:layout_alignStart="@+id/input1"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input2"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="#FFFFFF"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="27dp"
+        android:text="x1 :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp"
+        android:layout_below="@+id/submit"
+        android:layout_toStartOf="@+id/input3" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/tv5"
+        android:layout_below="@+id/tv5"
+        android:layout_marginTop="35dp"
+        android:text="x2 :"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/submit"
+        android:layout_alignTop="@+id/tv5"
+        android:layout_marginStart="45dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/tv7"
+        android:layout_alignTop="@+id/tv6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+</RelativeLayout>
